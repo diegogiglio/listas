@@ -89,6 +89,57 @@ lista2 = [4, 5, 6]
 #junto = ''.join(nome)
 #print(junto)
 
-objetivo = ["quero", "Ficar", "rico"]
-como = '$'.join(objetivo)
-print(como)
+#Remontando elementos com join
+#objetivo = ["quero", "Ficar", "rico"]
+#como = '$'.join(objetivo)
+#print(como)
+
+#Podemos colocar qualquer tipo de elemento em uma lista
+'''lista6 = [1, 2, 3, 'Diego', [123, 456, 789]]
+type(lista6)
+print(lista6)'''
+
+#Iterando em listas
+''''
+lista1 = [1, 2, 3, list('Diego'), [123, 456, 789]]
+for elemento in lista1:
+    print(elemento)
+'''
+
+#Somando elementos de uma lista com for
+'''
+lista2 = [10, 10, 10, 10, 10]
+soma = 0
+for _ in lista2:
+    soma = _ + soma
+    print(soma)
+'''
+'''
+#somando elementos de uma lista com while
+carrinho = []
+produto = ''
+while produto != 'sair':
+    print('Adicione um produto na lista ou digite sair: ')
+    produto = input()
+    if produto != 'sair':
+        carrinho.append(produto)
+
+for produto in carrinho:
+    print(produto)
+'''
+
+#Utilizando variáveis em listas
+numero = [1, 2, 3, 4, 5]
+soma = 0
+for _ in numero:
+    soma = soma + _
+print(soma)
+
+num1 = 1
+num2 = 2
+num3 = 3
+num4 = 4
+num5 = 5
+
+numero = num1 + num2 + num3 + num4 + num5
+print(numero)
