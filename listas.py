@@ -127,7 +127,7 @@ while produto != 'sair':
 for produto in carrinho:
     print(produto)
 '''
-
+'''
 #Utilizando variáveis em listas
 numero = [1, 2, 3, 4, 5]
 soma = 0
@@ -143,3 +143,93 @@ num5 = 5
 
 numero = num1 + num2 + num3 + num4 + num5
 print(numero)
+'''
+'''
+#converter string em lista
+#slipt transforma uma string em uma lista de elementos separados por padrão por espaço.
+nome = 'Diego Aguilar Giglio'
+nome = nome.split('i', 2)
+print(nome)
+'''
+'''
+#converter lista em string com join. O join concatena strings conforme o separador inicial
+lista = list('diego')
+nome = ''.join(lista)
+print(nome)
+'''
+'''
+#imprimindo variáveis através de índices
+cores = ["Verde", "Amarelo", "Azul", "Branco"]
+print(cores[1])
+#para imprimir na ordem inversa utilize - (menos)
+print(cores[-2])
+'''
+'''
+#Encontrar determinado valor em uma lista
+cores = ["Verde", "Amarelo", "Azul", "Branco"]
+print(cores.index('Azul'))
+'''
+
+'''
+#Procurando valores dentro de um intervalo
+numeros = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 0]
+print(numeros.index(5, 5, 9))
+'''
+
+'''
+#procurar a partir de um índice até outro índice (slicing)
+numeros = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 0]
+print(numeros[3:6])
+
+#procurar a partide de um índice até outro índice de passo em passo
+print(numeros[0::2])
+'''
+
+'''
+#procurar a partide de um índice até outro índice de passo em passo
+numeros = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 0]
+print(numeros[0::2])
+'''
+'''
+#Inverter valores em uma lista
+nome = ["Diego", "Giglio"]
+nome[0], nome[1] = nome[1], nome[0]
+print(nome)
+nome.reverse()
+print(nome)
+'''
+
+'''
+lista = ["Diego", "Giglio"]
+print(max(lista))
+print(min(lista))
+print(len(lista))
+numeros = [1 ,2, 3, 5, 8]
+print(sum(numeros))
+'''
+'''
+#Desempacotamento de lista
+lista = [1, 2, 3]
+num1, num2, num3 = lista
+print(num1, num2, num3)
+'''
+'''
+#Copia de lista (deep copy) #adições na lista cópia NÃO adicionam na lista original
+lista = [1, 2, 3]
+print(lista)
+nova = lista.copy()
+print(nova)
+nova.append(4)
+print(lista)
+print(nova)
+'''
+
+'''
+#Cópia de lista (Shallow copy) - adições na lista cópia adicionam na lista original
+lista = [1, 2, 3]
+print(lista)
+nova = lista
+nova.append(4)
+print(lista)
+print(nova)
+'''
